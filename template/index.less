@@ -1,0 +1,97 @@
+@import '~antd/es/style/themes/default.less';
+
+.<%= PageList[1] %> {
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  .Header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    .Header_left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .filter {
+        float: left;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+      }
+
+      .header_cntR {
+        float: left;
+        display: flex;
+        align-items: center;
+
+        .HeaderA {
+        }
+      }
+    }
+  }
+
+  .HeaderAdvanced {
+    margin-top: 10px;
+  }
+
+  .TableList {
+    flex: 1;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .paging {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    flex-shrink: 0;
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      margin-top: 10px;
+      float: right;
+    }
+  }
+}
+
+.PageHeaderWrapperCnt {
+  height: 100%;
+  width: 100%;
+  min-width: 700px;
+
+  .text {
+    float: left;
+    margin-bottom: 5px;
+  }  
+
+  .PageHeaderWrapperCnt_right {
+    float: right;
+
+    .rightNew,
+    .rightMulti,
+    .rightReload {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .multiDestroy:hover, .multiDestroy:focus {
+      color: red;
+      border-color: red;
+    }
+  }
+}
