@@ -7,7 +7,7 @@
 
 const ejs = require('ejs')
 const fs = require('fs');
-let basepath = '../../src/pages/';
+let basepath = '../../../src/pages/';
 
 let cptName = process.argv.splice(2);
 let handleFile = cptName[0];
@@ -216,7 +216,7 @@ let HomeFileMkdir = function(file) {
 
 async function createFile() {
   try {
-    await HomeFileExists(['../../src', '../../src/pages']);
+    await HomeFileExists(['../../../src', '../../../src/pages']);
     await readFile();
     await writeFile(await readFile());
     return console.log(`创建 ${pageName} 页面成功`);
